@@ -1,0 +1,6 @@
+{
+  "input_folder": "./unit_and_integration_test/temp/multiclass_classifier/data/Dogs/Validation",
+  "output_folder": "./unit_and_integration_test/temp/multiclass_classifier/performance",
+  "classifier_name": "vr_analyst_tool_unit_test_dogs_multiclass_classifier",
+  "file_prefix": "unit_test_classification"
+}

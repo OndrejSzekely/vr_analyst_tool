@@ -1,0 +1,5 @@
+{
+  "classes": [{"path": "./unit_and_integration_test/temp/binary_classifier/data/Dogs/Validation", "class_name": "dog"}],
+  "negative_class": {"path": "./unit_and_integration_test/temp/binary_classifier/data/Cats/Validation"},
+  "classifier_name": "vr_analyst_tool_unit_test_dogs_binary_classifier"
+}

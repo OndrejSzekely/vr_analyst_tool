@@ -1,0 +1,12 @@
+{
+  "input_folder": "",
+  "processing_tasks": [{"standardize_file_names": {}},
+    {"convert_format": {"format": ""}},
+    {"downsampleImageToNetworkSize": {}},
+    {"augmentation_translation": {"max_translation": 0, "min_translation": 0, "num_of_images": 10, "cropp_center": 0}},
+    {"augmentation_rotation": {"angle_step": 0, "min_angle": 0, "samples_num": 0, "cropp_center": 0}},
+    {"downsample": {"max_resolution": {"width": 0, "height": 0}, "max_size": 0.0}},
+    {"cropping": {"crops": [{"position": [0,0,0,0], "name": ""}]}},
+    {"tiling": {"reference_image_tile": {"width": 224, "height": 224}, "tile_variability": 0.2, "tile_translations": ["x","y","xy"]}}]
+}
+

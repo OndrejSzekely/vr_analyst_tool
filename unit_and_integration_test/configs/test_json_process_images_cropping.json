@@ -1,0 +1,4 @@
+{
+  "input_folder": "./unit_and_integration_test/temp/testing_data_cropping_aux",
+  "processing_tasks": [{"cropping": {"crops": [{"position": [60, 450,250,250], "name": "corner"}]}}]
+}

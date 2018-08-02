@@ -1,0 +1,10 @@
+{
+  "classes": [
+    {
+      "path": "./unit_and_integration_test/data/background_detection_classifier/background",
+      "class_name": "background"
+    }
+  ],
+  "classifier_name": "vr_analyst_tool_unit_test_background_detection_classifier",
+  "negative_class": {"path": "./unit_and_integration_test/temp/negative_tiles"}
+}

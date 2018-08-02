@@ -1,0 +1,5 @@
+{
+  "classes": [{"percentages": [0.7, 0.2, 0.1], "path": "./unit_and_integration_test/data/Cats"},
+    {"percentages": [0.7, 0.2, 0.1], "path": "./unit_and_integration_test/data/Dogs"}],
+  "output_path": "./unit_and_integration_test/temp/multiclass_classifier/data"
+}

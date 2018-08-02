@@ -1,0 +1,5 @@
+{
+  "input_folder": "",
+  "output_folder": "",
+  "tiling_conf": {"reference_image_tile": {"width": 0, "height": 0}, "tile_variability": 0, "tile_translations": ["x","y","xy"]}
+}

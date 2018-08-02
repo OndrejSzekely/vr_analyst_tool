@@ -1,0 +1,13 @@
+{
+  "classes": [
+    {
+      "path": "./unit_and_integration_test/temp/multiclass_classifier/data/Dogs/Train",
+      "class_name": "dog"
+    },
+    {
+      "path": "./unit_and_integration_test/temp/multiclass_classifier/data/Cats/Train",
+      "class_name": "cat"
+    }
+  ],
+  "classifier_name": "vr_analyst_tool_unit_test_dogs_multiclass_classifier"
+}

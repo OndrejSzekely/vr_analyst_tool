@@ -1,0 +1,5 @@
+{
+  "classes": [{"percentages": [0.7, 0.2, 0.1], "path": "./unit_and_integration_test/data/Cats"}],
+  "output_path": "./unit_and_integration_test/temp/binary_classifier/data",
+  "negative_class": {"percentages": [0.7, 0.2, 0.1], "path": "./unit_and_integration_test/data/Dogs"}
+}

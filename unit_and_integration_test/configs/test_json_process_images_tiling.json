@@ -1,0 +1,4 @@
+{
+  "input_folder": "./unit_and_integration_test/temp/testing_data_tiling_aux",
+  "processing_tasks": [{"tiling": {"reference_image_tile": {"width": 180, "height": 180}, "tile_translations": ["x","y","xy"]}}]
+}

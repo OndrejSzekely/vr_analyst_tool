@@ -1,0 +1,26 @@
+{
+  "input_folder": "",
+  "layers": [
+    {
+      "classifier_ids": [],
+      "results_processing": {
+        "pass": {
+          "handle_tiles": "all",
+          "handle_classifiers": "all",
+          "do_layer": [-1],
+          "criterion": {
+            "keep_growing": "",
+            "do_layer_on_chain_break": [1],
+          },
+          "do_output": [{"text": "", "color": ""}]},
+        "fail": {
+          "handle_tiles": "all",
+          "handle_classifiers": "all",
+          "do_layer": [-1],
+          "do_output": [{"text": "", "color": ""}]}},
+      "image_division": {"type": "halves"},
+      "stop_criterion": {"min_res": [0,100]},
+    }
+  ],
+  "output_folder": ""
+}

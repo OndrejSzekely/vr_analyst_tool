@@ -1,0 +1,10 @@
+{
+  "classes": [
+    {
+      "path": "./unit_and_integration_test/data/square_detection_classifier/square",
+      "class_name": "square"
+    }
+  ],
+  "classifier_name": "vr_analyst_tool_unit_test_square_detection_classifier",
+  "negative_class": {"path": "./unit_and_integration_test/data/square_detection_classifier/negative"}
+}
