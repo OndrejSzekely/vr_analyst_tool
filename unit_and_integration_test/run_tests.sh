@@ -29,7 +29,7 @@ cp -r ./unit_and_integration_test/data/testing_data ./unit_and_integration_test/
 
 echo "************************"
 echo "RUNNING TEST #1: VR Analyst tool setting"
-$PYTHON3_PATH "./run_scripts/run_ANALYST_TOOL_SETTING.py" --output_writer "file"
+$PYTHON3_PATH "./run_scripts/run_ANALYST_TOOL_SETTING.py" --output_writer "file" --conf_file "./unit_and_integration_test/credentials.json"
 ret=$?
 if [ $ret -ne 0 ]; then
     echo " - FAILED"
