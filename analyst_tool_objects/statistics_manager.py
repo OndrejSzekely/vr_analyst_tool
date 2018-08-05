@@ -2,6 +2,8 @@ from analyst_tool_objects import csv_manager
 import os
 import math
 import numpy
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import shutil
 import statistics
