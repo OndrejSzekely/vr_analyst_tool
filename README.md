@@ -5,6 +5,8 @@ Link to source files of the docs you can find here https://www.sharelatex.com/pr
 ## Docker image
 There is a Dockerfile in docker_img folder. To build an image you have to create a folder, put there Docker file, go to the directory in terminal and run:
 `docker build --no-cache -t image_name .`
+To run a new container and mount host folder to the container, do following:
+`docker run -it -v host/folder/path:container/folder/path image_name bash`
 # Created by IBM Watson iLab
 oszekely@cz.ibm.com
 <p align="center">
