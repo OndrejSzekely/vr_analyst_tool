@@ -15,7 +15,10 @@ class VrPythonApi:
         return  self.apiVersion
 
     def initializeVRObject(self):
-        self.vrObject = VisualRecognitionV3(self.apiVersion, api_key=self.apiKey)
+        if len(self.apiKey) == 40: 
+            self.vrObject = VisualRecognitionV3(self.apiVersion, api_key=self.apiKey)
+        else:
+            self.vrObject = VisualRecognitionV3(self.apiVersion, iam_api_key=self.apiKey)
 
     def closeVisualRecognitionService(self):
         self.vrObject = None
