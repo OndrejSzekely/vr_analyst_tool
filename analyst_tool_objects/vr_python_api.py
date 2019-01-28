@@ -15,28 +15,25 @@ class VrPythonApi:
         return  self.apiVersion
 
     def initializeVRObject(self):
-        if len(self.apiKey) == 40: 
-            self.vrObject = VisualRecognitionV3(self.apiVersion, api_key=self.apiKey)
-        else:
-            self.vrObject = VisualRecognitionV3(self.apiVersion, iam_apikey=self.apiKey)
+        self.vrObject = VisualRecognitionV3(self.apiVersion, iam_apikey=self.apiKey)
 
     def closeVisualRecognitionService(self):
         self.vrObject = None
 
     def getCustomClassifiers(self):
-        return self.vrObject.list_classifiers(verbose=True)
+        return self.vrObject.list_classifiers(verbose=True).result
 
     def getCustomClassifier(self, classifierId):
-        return  self.vrObject.get_classifier(classifierId)
+        return  self.vrObject.get_classifier(classifierId).result
 
     def deleteClassifier(self, classifierId):
-        self.vrObject.delete_classifier(classifierId)
+        self.vrObject.delete_classifier(classifierId).result
 
     def createClassifier(self, classifierName, kwargs):
-        return self.vrObject.create_classifier(classifierName, **kwargs)
+        return self.vrObject.create_classifier(classifierName, **kwargs).result
 
     def updateClassifier(self, classifierId, kwargs):
-        return self.vrObject.update_classifier(classifierId, **kwargs)
+        return self.vrObject.update_classifier(classifierId, **kwargs).result
 
     def classifyImage(self, classiferId, image):
-        return self.vrObject.classify(images_file=image, parameters=simplejson.dumps({"classifier_ids": [classiferId], "threshold": 0}))
+        return self.vrObject.classify(images_file=image, parameters=simplejson.dumps({"classifier_ids": [classiferId], "threshold": 0})).result
