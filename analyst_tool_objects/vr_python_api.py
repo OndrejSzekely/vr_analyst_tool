@@ -21,19 +21,20 @@ class VrPythonApi:
         self.vrObject = None
 
     def getCustomClassifiers(self):
-        return self.vrObject.list_classifiers(verbose=True).result
+        return self.vrObject.list_classifiers(verbose=True).get_result()
 
     def getCustomClassifier(self, classifierId):
-        return  self.vrObject.get_classifier(classifierId).result
+        return  self.vrObject.get_classifier(classifierId).get_result()
 
     def deleteClassifier(self, classifierId):
-        self.vrObject.delete_classifier(classifierId).result
+        self.vrObject.delete_classifier(classifierId)
 
     def createClassifier(self, classifierName, kwargs):
-        return self.vrObject.create_classifier(classifierName, **kwargs).result
+        return self.vrObject.create_classifier(classifierName, **kwargs).get_result()
 
     def updateClassifier(self, classifierId, kwargs):
-        return self.vrObject.update_classifier(classifierId, **kwargs).result
+        return self.vrObject.update_classifier(classifierId, **kwargs).get_result()
 
     def classifyImage(self, classiferId, image):
-        return self.vrObject.classify(images_file=image, parameters=simplejson.dumps({"classifier_ids": [classiferId], "threshold": 0})).result
+        return self.vrObject.classify(images_file=image, classifier_ids=[classiferId], threshold='0.0', owners=["me"],
+                                        accept_language="en").get_result()
